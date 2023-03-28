@@ -9,12 +9,6 @@ import org.testng.annotations.Test;
 
 public class InvalidPasswordTest extends BaseTest{
 
-//    @DataProvider(name = "users")
-//    public Object[][] getUsers() {
-//        return new Object[][]{
-//                {"vlad_auto", "incorrect_password"}, // provided password is incorrect
-//        };
-//    }
     @Test(dataProvider = "incorrect_password") // Test data located in BaseTest.java
     public void loginAttempt(String username, String password) {
         System.out.println("1. Navigate to home page");

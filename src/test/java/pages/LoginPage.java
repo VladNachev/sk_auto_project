@@ -65,4 +65,28 @@ public class LoginPage extends BasePage {
     public void verifyLogoutMessage(){
         Assert.assertTrue(logougMessage.isDisplayed(), "Successful Logout popup didn't appear!");
     }
+
+
+    public void loginCredentials(String username, String password) {
+        System.out.println("1. Navigate to home page");
+        HomePage homePage = new HomePage(driver);
+        homePage.navigate();
+
+        System.out.println("2. Navigate to login");
+        Header header = new Header(driver);
+        header.goToLogin();
+
+        System.out.println("3. Check the correct url is opened (login)");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.verifyUrl();
+
+        System.out.println("5. Enter username");
+        loginPage.enterUsername(username);
+
+        System.out.println("6. Enter password");
+        loginPage.enterPassword(password);
+
+        System.out.println("7. Click Sign in button");
+        loginPage.clickSignIn();
+    }
 }

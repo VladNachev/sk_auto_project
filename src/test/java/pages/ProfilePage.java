@@ -27,6 +27,18 @@ public class ProfilePage extends BasePage {
     @FindBy(css = "button.btn-primary")
     WebElement saveButton;
 
+    @FindBy(xpath = "//label[@class='btn-private btn btn-primary']")
+    WebElement privatePostButton;
+
+    @FindBy(xpath = "//label[@class='btn-private btn btn-primary active']")
+    WebElement privatePostActive;
+
+    @FindBy(id = "followers")
+    WebElement followersLink;
+
+    @FindBy(xpath = "//h4[text()='Followers']")
+    WebElement followersPopup;
+
     public ProfilePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -63,4 +75,24 @@ public class ProfilePage extends BasePage {
     public void validateInfoUpdated() {
         Assert.assertTrue(popupMessage.isDisplayed(), "Changes not saved");
     }
+
+    public void validateUsernameIsDisplaued() {
+        Assert.assertEquals(usernameHeader.getText(), "vlad_auto", "Incorrect username displayed!");
+    }
+    public void cliclPrivatePosts() {
+        privatePostButton.click();
+    }
+
+    public void validatePrivatePosts(){
+        Assert.assertTrue((privatePostActive != null), "Private posts button not clicked");
+    }
+    public void clickFollowersLink(){
+        followersLink.click();
+    }
+
+    public void validateFollowersWindowOpen(){
+        Assert.assertEquals(followersPopup.getText(), "Followers", "Followers pop-up window is not open");
+
+    }
+
 }

@@ -22,19 +22,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BaseTest {
+    String username = "vlad_auto";
+    String password = "vlad_auto_pass";
 
     protected WebDriver driver;
     public static final String TEST_RESOURCES_DIR = "src" + File.separator + "test" + File.separator + "resources" + File.separator;
-//    public static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download" + File.separator);
     public static final String SCREENSHOT_DIR = TEST_RESOURCES_DIR.concat("screenshots" + File.separator);
-//    public static final String REPORT_DIR = TEST_RESOURCES_DIR.concat("reports" + File.separator);
 
-    @DataProvider(name = "user")
-    public Object[][] getUser() {
-        return new Object[][]{
-                {"vlad_auto", "vlad_auto_pass"}, // test data
-        };
-    }
     @DataProvider(name = "users")
     public Object[][] getUsers() {
         return new Object[][]{
@@ -58,9 +52,6 @@ public class BaseTest {
     @BeforeSuite
     public void setupSuite(ITestContext context) throws IOException {
         TestRunner runner = (TestRunner) context;
-//        runner.setOutputDirectory(REPORT_DIR);
-//        cleanDirectory(REPORT_DIR);
-//        cleanDirectory(DOWNLOAD_DIR);
         cleanDirectory(SCREENSHOT_DIR);
         WebDriverManager.chromedriver().setup();
     }
@@ -70,7 +61,6 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         Map<String, Object> prefs = new HashMap<>();
-        //prefs.put("download.default_directory", System.getProperty("user.dir").concat(File.separator).concat(DOWNLOAD_DIR));
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
