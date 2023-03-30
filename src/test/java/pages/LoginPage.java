@@ -27,8 +27,8 @@ public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//div[contains(text(),'Successful logout!')]")
     WebElement logougMessage;
-
-
+    @FindBy(xpath = "//*[contains(text(),'Register')]")
+    WebElement registerLink;
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -66,7 +66,6 @@ public class LoginPage extends BasePage {
         Assert.assertTrue(logougMessage.isDisplayed(), "Successful Logout popup didn't appear!");
     }
 
-
     public void loginCredentials(String username, String password) {
         System.out.println("1. Navigate to home page");
         HomePage homePage = new HomePage(driver);
@@ -88,5 +87,9 @@ public class LoginPage extends BasePage {
 
         System.out.println("7. Click Sign in button");
         loginPage.clickSignIn();
+    }
+
+    public void goRegisterLink(){
+        clickElement(registerLink);
     }
 }
