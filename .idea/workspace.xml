@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da582af-e05a-46ff-9e05-c3be6d19e9a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LikeUnlikeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PostPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/UserPrivatePostsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UserPrivatePostsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml">
+  <component name="RunManager">
     <configuration name="C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sk_auto_project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -93,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvalidUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LikeDislikeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sk_auto_project" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +99,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InvalidUserTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.LikeDislikeTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -129,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LikeDislikeTest" />
         <item itemvalue="TestNG.C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.RegisterTest" />
         <item itemvalue="TestNG.FollowTest" />
         <item itemvalue="TestNG.FollowTest.FollowLatestUserPost" />
-        <item itemvalue="TestNG.InvalidUserTest" />
       </list>
     </recent_temporary>
   </component>
