@@ -6,7 +6,7 @@ import pages.Header;
 import pages.LoginPage;
 import pages.ProfilePage;
 
-// Test Description: The goal is to test the viewing of ALL, PUBLIC, PRIVATE post of user Login page
+// Test Description: The goal is to list MyFollowers in Profile page
 
 public class MyFollowersTest extends BaseTest{
 

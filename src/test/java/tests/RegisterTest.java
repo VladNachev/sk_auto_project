@@ -3,6 +3,8 @@ package tests;
 import pages.*;
 import org.testng.annotations.Test;
 
+// Test Description: The goal is to register new user
+
 public class RegisterTest extends BaseTest{
 
     @Test

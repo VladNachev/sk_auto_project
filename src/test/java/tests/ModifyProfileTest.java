@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import pages.*;
 import org.testng.annotations.Test;
 
+// Test Description: The goal is to add new public info to the profile
 public class ModifyProfileTest extends BaseTest{
     @BeforeMethod
     public void loginSetup(){

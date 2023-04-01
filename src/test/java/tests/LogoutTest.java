@@ -7,6 +7,7 @@ import pages.LoginPage;
 import pages.PostPage;
 import org.testng.annotations.Test;
 
+// Test Description: The goal is to test the Log-out functionality
 public class LogoutTest extends BaseTest{
 
     @BeforeMethod

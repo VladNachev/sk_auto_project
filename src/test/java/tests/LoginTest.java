@@ -6,6 +6,7 @@ import pages.LoginPage;
 import pages.ProfilePage;
 import org.testng.annotations.Test;
 
+// Test Description: The goal is to test the login functionality with correcr username and password provided
 public class LoginTest extends BaseTest{
 
     @Test(dataProvider = "users") // Test data located in BaseTest.java

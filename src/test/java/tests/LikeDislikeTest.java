@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.PostPage;
 
-// Test Description: The goal to like and dislake the latest post.
+// Test Description: The goal is to like and dislake the latest post.
 
 public class LikeDislikeTest extends BaseTest{
 
