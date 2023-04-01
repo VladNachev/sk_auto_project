@@ -12,12 +12,16 @@ public class PostPage extends BasePage {
     @FindBy(css = "i.far.fa-heart.fa-2x")
     WebElement likeButton;
 
-    @FindBy(css = "i.far.fa-heart.fa-2x.liked.xh-highlight")
+    @FindBy(css = "i.far.fa-heart.fa-2x.liked")
     WebElement unlikeButton;
+
+    @FindBy(xpath = "//div[contains(string(), \"You don' like this post anymore!\")]")
+    WebElement message;
 
 
     public PostPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
     public void verifyUrl() {
         verifyUrlContains(BASE_URL);
@@ -29,5 +33,9 @@ public class PostPage extends BasePage {
 
     public void unlikePost() {
         clickElement(unlikeButton);
+    }
+
+    public void validateMessage(){
+        Assert.assertTrue(message.isDisplayed(), "Expected confirmation message didn't appear!");
     }
 }

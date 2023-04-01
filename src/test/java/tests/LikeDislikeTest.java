@@ -27,7 +27,7 @@ public class LikeDislikeTest extends BaseTest{
         postPage.unlikePost();
 
         System.out.println("3. Validate the following message: You don' like this post anymore!");
-        // TO DO
+        postPage.validateMessage();
 
     }
 }

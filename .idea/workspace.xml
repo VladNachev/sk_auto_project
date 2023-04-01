@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da582af-e05a-46ff-9e05-c3be6d19e9a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LikeUnlikeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PostPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PostPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LikeDislikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LikeDislikeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/giveLikeUnlike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,46 +48,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml">
     <configuration name="C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sk_auto_project" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FollowTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sk_auto_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FollowTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FollowTest.FollowLatestUserPost" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sk_auto_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FollowTest" />
-      <option name="METHOD_NAME" value="FollowLatestUserPost" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -124,13 +93,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterTest.registerUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sk_auto_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterTest" />
+      <option name="METHOD_NAME" value="registerUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sk_auto_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationInvalidEmail" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LikeDislikeTest" />
         <item itemvalue="TestNG.C:/Users/vladXtron/IdeaProjects/sk_auto_project/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.RegistrationInvalidEmail" />
         <item itemvalue="TestNG.RegisterTest" />
-        <item itemvalue="TestNG.FollowTest" />
-        <item itemvalue="TestNG.FollowTest.FollowLatestUserPost" />
+        <item itemvalue="TestNG.RegisterTest.registerUser" />
+        <item itemvalue="TestNG.LikeDislikeTest" />
       </list>
     </recent_temporary>
   </component>

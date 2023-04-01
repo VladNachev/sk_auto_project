@@ -8,6 +8,8 @@
             <class name="tests.ModifyProfileTest"></class>
             <class name="tests.MyFollowersTest"></class>
             <class name="tests.UserPrivatePostsTest"></class>
+            <class name="tests.LikeDislikeTest"></class>
+            <class name="tests.RegisterTest"></class>
         </classes>
     </test>
 </suite>

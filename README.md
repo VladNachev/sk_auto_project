@@ -29,8 +29,8 @@ All test classes are added in a test suite to the testng.xml file (/src/tests/te
 - LoginTest - Testing the login functionality (happy-path). Both scenarios: login with UserName and login with e-mail are included.
 - InvalidUserTest - Attempt go login with invalid UserName
 - InvalidPasswordTest - Attempt to login with invalid password
-- RegistrationTest - TO DO
-- LikeDislikeTest - TO DO
+- RegistrationTest - Test User Registration. **Note:** Corresponding function generates unique credentials each time so the test can be re-used multiple times.
+- LikeDislikeTest - Test Like/Dislike post functionality
 - LogoutTest - Testing the logout functionality
 - ModifyProfileTest - Testing the profile "add new info" functionality. As a result, the profile info should be updated with success. **Note:** Before updating the info, test will clear the previous info text in order to validate the new info is added correctly.
 - MyFollowersTest - Testing the "view my followers" functionality. As a result, the Followers pop-up window in Profile page should open and list all the followers.
