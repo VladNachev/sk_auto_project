@@ -3,9 +3,7 @@
 
 Target of test suit: http://training.skillo-bg.com:4200/posts/all
 
-This project is part of the Skillo training program:
-
-![alt text](https://www.skillo-bg.com/images/logo/logo.png)
+![alt text](https://www.skillo-bg.com/assets/logo-skillo-white.png)
 
 Used technologies in the project:
 
